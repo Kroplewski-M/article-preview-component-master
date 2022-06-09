@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Article preview component</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -28,24 +29,23 @@
         to help you make any room feel complete.
       </p>
     </div>
-    <div class="w-[300px] h-[50px] mt-[25px] flex ">
+    <div class="flex">
+    <div id="normal" class="w-[300px] h-[50px] mt-[25px] flex ">
         <img src="./images/avatar-michelle.jpg" alt="profile pic" class=" rounded-full w-[40px] h-[40px] ml-[15px]">
         <div class="ml-5 mt-[5px]">
           <p class="text-[11px]">Michelle Appleton</p>
           <p class="text-[9px] text-gray-500">28 Jun 2020</p>
         </div>
-        <div class="w-[25px] h-[25px] rounded-full bg-gray-300 relative -right-[70px] mt-[10px] cursor-pointer">
-          <img src="./images/icon-share.svg" alt="share" class="w-[15px] h-[15px] mx-auto mt-[3px] ">
-        </div>
-    </div>
-    <div class="w-[300px] h-[50px] mt-[25px] bg-gray-600 rounded-b-xl flex hidden">
+      </div>
+      <div id="share" class="w-[25px] h-[25px] rounded-full bg-gray-300  mt-[35px] z-50 cursor-pointer absolute ml-[240px]">
+        <img src="./images/icon-share.svg" alt="share" class="w-[15px] h-[15px] mx-auto mt-[3px] ">
+      </div>
+  </div>
+    <div id="mobileShare"class="w-[300px] h-[50px] mt-[25px] bg-gray-600 rounded-b-xl flex hidden">
           <p class="tracking-[.25em] text-gray-300 mt-[12px] ml-5 text-[14px]">SHARE</p>
           <img src="./images/icon-facebook.svg" alt="FB" class="w-[20px] h-[20px] ml-[15px] mt-[12px]">
           <img src="./images/icon-twitter.svg" alt="FB" class="w-[20px] h-[20px] ml-[15px] mt-[12px]">
           <img src="./images/icon-pinterest.svg" alt="FB" class="w-[20px] h-[20px] ml-[15px] mt-[12px]">
-          <div class="w-[25px] h-[25px] rounded-full bg-gray-300 relative -right-[50px] mt-[10px] cursor-pointer">
-            <img src="./images/icon-share.svg" alt="share" class="w-[15px] h-[15px] mx-auto mt-[3px] ">
-          </div>
     </div>
 
   </div>
